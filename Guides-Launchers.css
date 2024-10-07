@@ -1,0 +1,88 @@
+
+.grenadeLauncherTitle {
+    color: rgb(146,206,102);
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+
+.proxiMineLauncherTitle {
+    color: rgb(105,105,105);
+    text-shadow:
+   -1px -1px 0 rgb(255, 255, 255),  
+    1px -1px 0 rgb(255, 255, 255),
+    -1px 1px 0 rgb(255, 255, 255),
+     1px 1px 0 rgb(255, 255, 255);
+}
+
+.rocketLauncherTitle {
+    color: rgb(206, 172, 173);
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+
+.nailGunTitle {
+    color: rgb(229,119,88);
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+
+.jackOLanternLauncherTitle {
+    color: rgb(241,181,102);
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+
+.snowmanCannonTitle {
+    color: rgb(133,186,202);
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+
+.StyngerTitle {
+    color: rgb(183,93,23);
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+
+.electroTitle {
+    color: rgb(124,199,231);
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+
+.celebrationTitle {
+    color: rgb(217,173,138);
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+
+.celebrationMk2Title {
+    background-image: linear-gradient(to left, violet, orange, blue, green, red, yellow, indigo);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}

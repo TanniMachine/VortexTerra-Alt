@@ -1,0 +1,428 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: terrariaFont;
+    background-image: url("Media/MenuBG2.png");
+    background-color:rgb(95, 166, 210);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  * {
+    font-family: terrariaFont;
+  }
+
+  /* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 5px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(15, 201, 15, 0.705); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:active {
+  background: #0a8a11cc; 
+}
+
+  @font-face {
+    font-family: terrariaFont;
+    src: url(AndyBold.ttf);
+  }
+
+  .VortexTerraLogo {
+    width: 100px;
+  }
+
+  @media screen and (min-width: 780px) {
+    .nav-link {
+      margin-top: -1em;
+      position: absolute;
+      right: 0;
+    }
+
+    #musicIcon {
+      height: 45px;
+      width: 45px;
+      margin-top: -25%;
+    }
+  
+    #musicButton {
+      margin-right: 29.5em;
+    }
+  
+    #music {
+      margin-right: 24.5em;
+    }
+  
+    #gallery {
+      margin-right: 18.5em;
+  }
+
+    #trailers {
+    margin-right: 12.5em;
+    }
+  
+  
+    #guide {
+      margin-right: 7em;
+    }
+    
+    #update {
+      margin-right: 1em;
+    }
+  }
+
+  @media screen and (min-width: 780px) {
+  .panel-body {
+    background-color: rgba(255,255,255, 0.8);
+    margin: auto;
+    padding: 20px;
+    font-family: terrariaFont;
+    border-radius: 10px;
+  }
+}
+  @media screen and (max-width: 779px) {
+    #musicIcon {
+      height: 45px;
+      width: 45px;
+    }  
+
+    .panel-body {
+    background-color: rgba(255,255,255, 0.8);
+    margin: auto;
+    padding: 20px;
+    height: 500px;
+    overflow: auto;
+    }
+  }
+
+
+  .btn-primary{
+    font-family: terrariaFont;
+    background-color: rgba(93, 118, 201, 0.9) !important;
+    border: 2px solid black !important;
+    width: 100px !important;
+    height: 35px !important;
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+  }
+
+
+  .armorTitles {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .clickableSets {
+    text-align: center;
+  }
+
+  /** Title colors and shadows **/
+
+  .vortexTitle {
+    color: rgb(0, 255, 242);
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+  }
+  
+  .fossilTitle {
+    color: rgb(216, 143, 76);
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+  }
+
+  .necroTitle {
+    color: rgb(63, 63, 62);
+    text-shadow:
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+  }
+
+  .cobaltTitle {
+    color: rgb(4,85,166);
+    text-shadow:
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+  }
+
+  .palladiumTitle {
+    color: rgb(226, 164, 47);
+    text-shadow:
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 rgb(251, 255, 0),
+     1px 1px 0 rgb(251, 255, 0);
+  }
+
+  .mythrilTitle {
+    color: rgb(23, 197, 107);
+    text-shadow:
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+  }
+
+  .orichalcumTitle {
+    color: rgb(248, 34, 248);
+    text-shadow:
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+  }
+
+  .adamantiteTitle {
+    color: rgb(216, 66, 21);
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+  }
+
+  .titaniumTitle {
+    color: rgb(194, 238, 232);
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+  }
+
+  .huntressTitle {
+    color: rgb(145,172,81);
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+  }
+
+  .hallowedTitle {
+    color: rgb(247, 226, 37);
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+  }
+
+  .frostTitle {
+    color: rgb(122, 162, 163);
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+  }
+
+  .chlorophyteTitle {
+    color: rgb(87, 231, 29);
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+  }
+
+  .redTitle {
+    color: rgb(243, 65, 65);
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+  }
+
+  .shroomiteTitle {
+    color: rgb(83, 65, 243);
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+  }
+
+  .blowpipeTitle {
+    color: rgb(132, 201, 105);
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+  }
+
+  .blowgunTitle {
+    color: rgb(188, 247, 165);
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+  }
+
+  .candyCornTitle {
+    color: rgb(209, 175, 65);
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+  }
+
+  .chainGunTitle {
+    color: rgb(228, 65, 54);
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+  }
+
+  .miniSharkTitle {
+    color: rgb(228, 149, 46);
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+  }
+
+  .megaSharkTitle {
+    color: rgb(221, 184, 137);
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+  }
+
+  .gatligatorTitle {
+    color: rgb(176,156,125);
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+  }
+
+  .paintBallTitle {
+    background-image: linear-gradient(to left, violet, orange, blue, green, red, yellow, indigo);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .clockWorkTitle {
+    color: rgb(255, 215, 86);
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+  }
+
+  .coinGunTitle {
+    color: rgb(255, 226, 132);
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+  }
+  
+  .flameThrowerTitle {
+    color: rgb(255, 97, 24);
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+  }
+  
+  .venusMagnumTitle {
+    color: rgb(168,233,89);
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+  }
+
+  .sniperRifleTitle {
+    color: rgb(135,161,120);
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+  }
+
+  .onyxBlasterTitle {
+    color: rgb(115, 34, 122);
+    text-shadow:
+   -1px -1px 0 rgb(255, 255, 255),  
+    1px -1px 0 rgb(255, 255, 255),
+    -1px 1px 0 rgb(255, 255, 255),
+     1px 1px 0 rgb(255, 255, 255);
+  }
+
+  .SDMGTitle {
+    color: rgb(155,222,237);
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+  }
+
+  .armorPointer {
+    cursor:pointer;
+  }
+
+
+
+
+.btn-primary:hover {
+  border-color: rgb(210,195,74) !important;
+  border-width : 2px;
+}
+
+.footer {
+  flex-shrink: 0;
+  background: rgb(95, 166, 210);
+  padding: 20px;
+  color: white;
+}
+
+p.footer-copyright {
+  color: black;
+}

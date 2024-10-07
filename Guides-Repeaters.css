@@ -1,0 +1,81 @@
+
+.cobaltRepeaterTitle {
+    color: rgb(39, 140, 223);
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+
+.pallaRepeaterTitle {
+    color: rgb(249,220,93);
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000; 
+}
+
+.mythrilRepeaterTitle {
+    color: rgb(92,172,187);
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000; 
+}
+
+.orichalcumRepeaterTitle {
+    color: rgb(247,101,250);
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000; 
+}
+
+.adamantiteRepeaterTitle {
+    color: rgb(185, 38, 48);
+    text-shadow:
+   -1px -1px 0 rgb(255, 255, 255),  
+    1px -1px 0 rgb(255, 255, 255),
+    -1px 1px 0 rgb(255, 255, 255),
+     1px 1px 0 rgb(255, 255, 255); 
+}
+
+.titaniumRepeaterTitle {
+    color: rgb(196,192,217);
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000; 
+}
+
+.hallowedRepeaterTitle {
+    color: rgb(232,218,136);
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000; 
+}
+
+.chloroShotBowTitle {
+    color: rgb(168,221,76);
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000; 
+}
+
+.stakeLauncherTitle {
+    color: rgb(41,36,62);
+    text-shadow:
+   -1px -1px 0 rgb(255, 255, 255),  
+    1px -1px 0 rgb(255, 255, 255), 
+    -1px 1px 0 rgb(255, 255, 255), 
+     1px 1px 0 rgb(255, 255, 255); 
+}

@@ -1,0 +1,200 @@
+@font-face {
+  font-family: terrariaFont;
+  src: url(AndyBold.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: terrariaFont;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 5px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(15, 201, 15, 0.705); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:active {
+  background: #0a8a11cc; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: terrariaFont;
+    background-image: url("Media/MenuBG.png");
+    background-color:rgb(95, 166, 210);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.VortexTerraLogo {
+    width: 100px;
+}
+
+@media screen and (min-width: 780px) {
+  .nav-link {
+    margin-top: -1em;
+    position: absolute;
+    right: 0;
+  }
+  
+  #musicIcon {
+    height: 45px;
+    width: 45px;
+    margin-top: -25%;
+  }
+
+  #musicButton {
+    margin-right: 29.5em;
+  }
+
+  #music {
+    margin-right: 24.5em;
+  }
+
+  #gallery {
+    margin-right: 18.5em;
+}
+
+  #trailers {
+  margin-right: 12.5em;
+  }
+
+
+  #guide {
+    margin-right: 7em;
+  }
+  
+  #update {
+    margin-right: 1em;
+  }
+
+  .carousel-inner {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 90% !important;
+    }
+
+  #gunButton {
+    display: inline-block;
+    margin-top: 1em;
+  }
+
+  .p-guns {
+    margin-top: 1em;
+  }
+
+  .body2.text-justify { /* Not Static */
+    margin-right: 51%;
+  }
+
+  .car3.text-justify { /* Not Static */
+    margin-left: 51%;
+    margin-top: -3.5em;
+  }
+
+  .divP2 {
+    height: 40em;
+    overflow: hidden;
+  }
+
+  #terrariaWeb {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 35em;
+    width: 80em;
+  }
+}
+
+@media screen and (max-width: 779px) {
+  #musicIcon {
+    height: 45px;
+    width: 45px;
+  }
+
+  .divP1 {
+    height: 20em;
+    overflow: show;
+  }
+
+  .btn.btn-outline-success {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 90% !important;
+  }
+
+  .body2.text-justify { /* Not Static */
+    margin-bottom: 1em;
+  }
+
+  .p-guns {
+    margin-top: 1em;
+  }
+
+  #terrariaWeb {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  background-color: rgb(83, 161, 250) !important;
+  border-radius: 2em !important;
+  padding: 1em !important;
+}
+
+#c2 {
+  color: black;
+}
+
+* .body {
+    background-color: rgb(255, 255, 255, 0.8);
+    overflow: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 1em;
+}
+
+.paragraph {
+    text-indent: 2em;
+    margin: 1em;
+    margin-top: 0.5em !important;
+}
+
+.body2 { /* Not Static */
+  margin-top: 1em !important;
+}
+
+.footer {
+  flex-shrink: 0;
+  background: rgb(95, 166, 210);
+  padding: 20px;
+  color: rgb(255, 255, 255);
+}
+
+p.footer-copyright {
+  color: black;
+}

@@ -1,0 +1,202 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: terrariaFont;
+    background-image: url("Media/MenuBG5.png");
+    background-color:rgb(95, 166, 210);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  * {
+    font-family: terrariaFont;
+  }
+
+  /* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 5px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(15, 201, 15, 0.705); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:active {
+  background: #0a8a11cc; 
+}
+
+  @font-face {
+    font-family: terrariaFont;
+    src: url(AndyBold.ttf);
+  }
+
+  .VortexTerraLogo {
+    width: 100px;
+  }
+
+  @media screen and (min-width: 780px) {
+    .nav-link {
+      margin-top: -1em;
+      position: absolute;
+      right: 0;
+    }
+
+    #musicIcon {
+      height: 45px;
+      width: 45px;
+      margin-top: -25%;
+    }
+  
+    #musicButton {
+      margin-right: 29.5em;
+    }
+  
+    #music {
+      margin-right: 24.5em;
+    }
+  
+    #gallery {
+      margin-right: 18.5em;
+  }
+
+    #trailers {
+    margin-right: 12.5em;
+    }
+  
+  
+    #guide {
+      margin-right: 7em;
+    }
+    
+    #update {
+      margin-right: 1em;
+    }
+
+    .body2.text-justify { /* Not Static */
+        margin-right: 51%;
+    }
+  }
+
+  @media screen and (max-width: 779px) { /* Mobile View */
+    #musicIcon {
+      height: 45px;
+      width: 45px;
+    }  
+
+    .body2.text-justify { /* Not Static */
+        margin-bottom: 1em;
+      }
+
+    .destroyer-div {
+      display: block !important;
+    }
+
+    .galleryMain {
+      border-radius: 2em !important;
+      padding: 1em !important;
+      width: 100% !important;
+      height: 100% !important;
+      
+    }
+
+    .galleryMoonlord {
+      border-radius: 2em !important;
+      padding: 1em !important;
+      width: 100% !important;
+      height: 100% !important;
+    }
+
+    .gallerySpiderArmor {
+      border-radius: 2em !important;
+      padding: 1em !important;
+      width: 100% !important;
+      height: 100% !important;
+    }
+  }
+
+.galleryMain {
+    border-radius: 2em;
+    padding: 1em;
+    width: 500px;
+    height: 300px;
+  }
+
+.galleryMoonlord {
+    border-radius: 2em;
+    padding: 1em;
+    width: 500px;
+    height: 350px;
+  }
+
+.gallerySpiderArmor {
+    border-radius: 2em;
+    padding: 1em;
+    width: 400px;
+    height: 500px;
+  }
+
+.artPointer {
+  cursor:pointer;
+}
+
+.galleryTitle {
+  text-align: center;
+  font-size: 50px;
+  color: white;
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+
+.gallerySubtitle {
+  text-align: center;
+  font-size: 20px;
+  color: white;
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+
+.galleryText {
+    font-size: 25px;
+    margin: auto;
+    color: white;
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+
+.destroyer-div {
+    text-align: center !important;
+}
+
+.footer {
+    flex-shrink: 0;
+    background: rgb(95, 166, 210);
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    margin-top: 30em;
+  }
+  
+p.footer-copyright {
+    color: black;
+  }

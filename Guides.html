@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1">
+
+    <!-- Bootstrap JQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="bootstrap-4.6.0-dist/js/bootstrap.bundle.js"></script>
+    <script src="bootstrap-4.6.0-dist/js/bootstrap.js"></script>
+
+    <!-- Link CSS -->
+    <link rel ="stylesheet" href = "Guides.css">
+    <link rel ="stylesheet" href = "Guides-Bows.css">
+    <link rel ="stylesheet" href = "Guides-Repeaters.css">
+    <link rel ="stylesheet" href = "Guides-Launchers.css">
+    <link rel="stylesheet" href="bootstrap-4.6.0-dist/css/bootstrap.css">
+
+    <title> Guides </title>
+
+  </head>
+<body>
+
+  <!-- Background Music -->
+  <audio id="audio" autoplay>
+    <source src="Music/Music Playlist/Terraria OST - Alternate Day.mp3" type="audio/mpeg">
+    Your browser does not support this audio format.
+  </audio>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light" style = "background-color: rgb(95, 166, 210)">
+    <a class="navbar-brand" href="index.html">
+      <img src ="Media/VortexTerraLogo.png" class="VortexTerraLogo">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#" id="musicButton" onclick="toggleSound();"><img src ="Media/Icons/MusicOn.png" id="musicIcon"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Terraria-Music-Playlist.html" id="music">Music</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Gallery.html" id="gallery">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Trailers.html" id="trailers">Trailers</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="Guides.html" id="guide">Guides</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Updates.html" id="update">Updates</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <br>
+
+  <!-- Container -->
+  <!-- Inside this container are all the rows and information within the panels -->
+  <div class = "container">
+    <div id = "panelGroup">
+      <div class="panel panel-default">
+        <a class = "btn btn-primary" role = "button" name = "armorCase"> Armor </a>
+        <a class = "btn btn-primary" role = "button" name = "gunsCase"> Guns </a>
+        <a class = "btn btn-primary" role = "button" name = "bowsCase"> Bows </a>
+        <a class = "btn btn-primary" role = "button" name = "repeatersCase"> Repeaters </a>
+        <a class = "btn btn-primary" role = "button" name = "launchersCase"> Launchers </a>
+        <div class = "container">
+          <div id ="armor" class ="grp">
+            <div class="panel-body">
+              <p class = "armorTitles">Hover over the armor sets to get a closer look.</p> 
+              <h6><p class = "clickableSets">Armor sets with the <img src="Media/terrariaTree.png" height = "50px" width = "30px">
+                 beside it are clickable. Clickable armor sets have gifs attached to them.</p></h6>
+              <div class = "row"> <!-- First Row -->
+              <div class = "col-4 Vortex"><P class = "armorTitles vortexTitle">Vortex Armor</P><img src="Media/terrariaTree.png" 
+                height = "50px" width = "30px"><img src = "Media/vortexArmor.png" class = "armorPointer" onmouseover="imageEnlarge(this)"
+                 onmouseout="imageReset(this)" onclick = "clickVortex()" alt = "Vortex Armor" height = "40px" width = "30px">
+              A post-Moon Lord set of armor that primarily provides ranged weapon boosts. It is currently the final ranged armor 
+              set. Crafting the full set requires a total of 36 Luminite Bars (144 Luminite) and 45 Vortex Fragments. 
+              Double tapping the down key activates stealth. Click the armor set to see it in action. 
+            </div> <!-- col Vortex /div -->
+              <div class = "col-4 Fossil"><P class = "armorTitles fossilTitle">Fossil Armor</P><img src = "Media/fossilArmor.png" onmouseover="imageEnlarge(this)" onmouseout="imageReset(this)" alt = "Fossil Armor"
+                height = "40px" width = "30px"> A pre-Hardmode armor set. It has notably less defense than most other
+                 similarly available armor sets, providing a total of 13 defense.
+                </div> <!-- col Fossil /div -->
+              <div class = "col-4 Necro"><P class = "armorTitles necroTitle">Necro Armor</P><img src = "Media/necroArmor.png" onmouseover="imageEnlarge(this)" onmouseout="imageReset(this)" alt = "Necro Armor"
+                height = "40px" width = "30px"> A post-Skeletron armor set. A full set grants a basic 16 defense and 10% 
+                increased ranged critical strike chance. In addition, each piece increases ranged damage by 5%, 
+                increasing ranged damage by a total of 15%.
+              </div> <!-- col Necro /div -->
+            </div> <!-- First Row /div -->
+            <div class = "row"> <!-- Second Row -->
+              <div class = "col-4 Cobalt"><P class = "armorTitles cobaltTitle">Cobalt Armor</P><img src = "Media/cobaltArmor.png" onmouseover="imageEnlarge(this)" onmouseout="imageReset(this)" alt = "Cobalt Armor"
+                height = "40px" width = "30px"> A Hardmode armor set crafted from Cobalt Bars and is the alternative to Palladium armor.
+               A full set also grants a total of 3% critical hit chance and +10% movement speed and 10% increased ranged damage and critical strike chance.
+            </div> <!-- col Cobalt /div -->
+            <div class = "col-4 Palladium"><P class = "armorTitles palladiumTitle">Palladium Armor</P><img src = "Media/palladiumArmor.png" onmouseover="imageEnlarge(this)" onmouseout="imageReset(this)" alt = "Palladium Armor"
+              height = "40px" width = "30px"> A Hardmode armor set crafted from Palladium Bars and is the alternative to Cobalt armor.
+             A full set also grants the Rapid healing buff upon successful attacks, and increases ranged damage and critical strike chance.
+          </div> <!-- col Palladium /div -->
+          <div class = "col-4 Mythril"><P class = "armorTitles mythrilTitle">Mythril Armor</P><img src = "Media/mythrilArmor.png" onmouseover="imageEnlarge(this)" onmouseout="imageReset(this)" alt = "Mythril Armor"
+            height = "40px" width = "30px"> An armor which requires Mythril Bars and must be crafted at a Mythril Anvil. Crafting
+            a one-helmet set requires 45 Mythril Bars, or 180 Mythril Ore. Gives increases ranged damage and critical strike chance.
+            The alternative to this armor is Orichalcum armor.
+        </div> <!-- col Mythril /div -->
+          </div> <!-- Second Row /div -->
+          <div class = "row"> <!-- Third Row -->
+            <div class = "col-4 Orichalcum"><P class = "armorTitles orichalcumTitle">Orichalcum Armor</P><img src = "Media/orichalcumArmor.png" onmouseover="imageEnlarge(this)" onmouseout="imageReset(this)" alt = "Orichalcum Armor"
+              height = "40px" width = "30px"> A Hardmode armor set and the counterpart to Mythril armor.  Crafting a one-helmet set
+               requires 54 Orichalcum Bars or 216 Orichalcum Ore. Gives increased ranged critical strike chance and increased movement speed.
+          </div> <!-- col Mythril /div -->
+          <div class = "col-4 Adamantite"><P class = "armorTitles adamantiteTitle">Adamantite Armor</P><img src="Media/terrariaTree.png" 
+            height = "50px" width = "30px"><img src = "Media/adamantiteArmor.png" class = "armorPointer" onmouseover="imageEnlarge(this)" onmouseout="imageReset(this)" onclick="clickAdamantite()" alt = "Adamantite Armor"
+            height = "40px" width = "30px"> A Hardmode armor set, crafting a one-helmet set requires 54 Adamantite Bars, 
+            made from 216 Adamantite Ore. Gives increased ranged damage and critical strike chance. Its alternative is Titanium 
+            armor.  A full set gives off a faint pulsing aura around the character. Click the armor set to see this in action.
+        </div> <!-- col Adamantite /div -->
+        <div class = "col-4 Titanium"><P class = "armorTitles titaniumTitle">Titanium Armor</P><img src="Media/terrariaTree.png" 
+          height = "50px" width = "30px"><img src = "Media/titaniumArmor.png" class= "armorPointer" onmouseover="imageEnlarge(this)" onmouseout="imageReset(this)" onclick="clickTitanium()" alt = "Titanium Armor"
+          height = "40px" width = "30px"> An armor set crafted from Titanium Bars, and is the alternative to Adamantite armor. When
+           the full set is equipped, striking an enemy with a melee, ranged, or magic weapon, or having an enemy be hit by a minion or 
+           sentry, will grant the Titanium Barrier buff. Click the armor set to see this in action.
+      </div> <!-- col Titanium /div -->
+          </div> <!-- Third Row /div -->
+          <div class = "row">
+            <div class = "col-4 Huntress"><P class = "armorTitles huntressTitle">Huntress Armor</P><img src = "Media/huntressArmor.png" onmouseover="imageEnlarge(this)" onmouseout="imageReset(this)" alt = "Huntress Armor"
+              height = "40px" width = "30px"> A Hardmode armor set that gives +36 defense, +20% ranged damage, +30% minion damage,
+               10% ranged critical chance +20% movement speed, +10% ammo conservation, and +2 extra sentry slots.
+          </div> <!-- col Huntress /div -->
+          <div class = "col-4 Hallowed"><P class = "armorTitles hallowedTitle">Hallowed Armor</P><img src="Media/terrariaTree.png" 
+            height = "50px" width = "30px"><img src = "Media/hallowedArmor.png" class= "armorPointer" onmouseover="imageEnlarge(this)" onmouseout="imageReset(this)" onclick="clickHallowed()" alt = "Hallowed Armor"
+            height = "40px" width = "30px"> A Hardmode armor set. Crafting a full set with one headpiece requires 54 
+            Hallowed Bars (dropped by the mechanical bosses). Grants increased ranged damage and critical strike chance. 
+            Additionally, wearing a full set, striking an enemy with a melee, ranged, or magic weapon, or having an enemy be hit by
+             one of the player's minions will grant the Holy Protection buff. Click the armor set to see this in action.
+        </div> <!-- col Hallowed /div -->
+        <div class = "col-4 Frost"><P class = "armorTitles frostTitle">Frost Armor</P><img src = "Media/frostArmor.png" onmouseover="imageEnlarge(this)" onmouseout="imageReset(this)" alt = "Frost Armor"
+          height = "40px" width = "30px"> A Hardmode armor set that grants the ability to inflict Frostbite on enemies with melee
+          or ranged attacks when the whole set is worn, as well as causing all melee and ranged weapons to give off light. Gives increased
+          melee and ranged damage, critical strike chance, and increased movement and attack speed.
+      </div> <!-- col Hallowed /div -->
+          </div> <!-- Fourth Row /div-->
+          <div class = "row">
+            <div class = "col-4 Chlorophyte"><P class = "armorTitles chlorophyteTitle">Chlorophyte Armor</P><img src="Media/terrariaTree.png" 
+              height = "50px" width = "30px"><img src = "Media/chlorophyteArmor.png" class= "armorPointer" onmouseover="imageEnlarge(this)" onmouseout="imageReset(this)" onclick="clickChlorophyte()" alt = "Chlorophyte Armor"
+              height = "40px" width = "30px"> A Hardmode armor set available after defeating all three mechanical bosses.  It can
+               be considered a partial upgrade of Hallowed armor. Equipping the full set causes a Crystal Leaf to permanently appear over the player's
+                 head, automatically attacking enemies via a ranged projectile that costs no mana or ammunition. Increases ranged
+                  damage and has a chance to not consume ammunition.
+            </div> <!-- Chlorophyte /div -->
+            <div class = "col-4 redRiding"><P class = "armorTitles redTitle">Red Riding Armor</P><img src = "Media/redRidingArmor.png" onmouseover="imageEnlarge(this)" onmouseout="imageReset(this)" alt = "Red Riding Armor"
+              height = "40px" width = "30px"> A ranger-oriented armor set purchased from the Tavernkeep for 225 <img src ="Media/defenderMedal.png"> Defender Medal 
+              in total, after Golem has been defeated. earing the full set will cause Explosive Traps to attack much faster
+              and to have a 1/2 chance to inflict 4-9 seconds of the Oiled debuff.
+            </div> <!-- Red Riding /div -->
+            <div class = "col-4 Shroomite"><P class = "armorTitles shroomiteTitle">Shroomite Armor</P><img src = "Media/shroomiteArmor.png" onmouseover="imageEnlarge(this)" onmouseout="imageReset(this)" alt = "Shroomite Armor"
+              height = "40px" width = "30px"> A Hardmode, post-Plantera armor set that boosts the effectiveness of ranged weapons.
+              It is available after defeating Plantera and is the second-strongest ranger armor available, only beaten by Vortex armor.
+              Depending on the headpiece type, it either boosts arrow damage, bullet damage, or rocket damage.
+            </div> <!-- Shroomite /div -->
+          </div> <!-- Fifth Row -->
+          </div> <!-- Armor panel-body /div -->
+          </div> <!-- div id = "armor" class = "grp" /div -->
+          <div id ="guns" style = "display:none" class ="grp">
+            <div class="panel-body">
+              <p class = "armorTitles">Hover over the guns to get a closer look.</p> 
+              <h6><p class = "clickableSets">Click on the guns to view the gifs attached to them.</p></h6>
+              <div class = "row"> <!-- Guns - First Row -->
+                <div class = "col-4 Blowpipe"><P class = "armorTitles blowpipeTitle">Blowpipe</P><img src = "Media/blowpipe.png" class="armorPointer" onmouseover="imageEnlargeGun(this)" onmouseout="imageResetGun(this)" onclick="clickBlowpipe()" alt = "Blowpipe"
+                  height = "10px" width = "38px"> A ranged weapon that auto-fires Seeds and Darts as ammunition. When a Blowpipe
+                   is in a player's inventory, there is a chance that any vegetation growing on normal grass blocks will yield
+                    some Seeds. Flowers growing in Clay Pots and Planter Boxes can also yield Seeds.
+                     </div> <!-- Blowpipe /div -->
+              <div class = "col-4 Blowgun"><P class = "armorTitles blowgunTitle">Blowgun</P><img src = "Media/blowgun.png" class="armorPointer" onmouseover="imageEnlargeGun(this)" onmouseout="imageResetGun(this)" onclick="clickBlowgun()" alt = "Blowgun"
+                height = "10px" width = "38px">  A pre-Hardmode ranged weapon, a stronger version of the Blowpipe, and is 
+                purchased from the Witch Doctor for 5 Gold. Carrying a Blowgun in the inventory causes any vegetation
+                 growing on normal grass blocks to occasionally yield some Seeds when destroyed.
+                </div> <!-- Blowgun /div -->
+                <div class = "col-4 candyCorn"><P class = "armorTitles candyCornTitle">Candy Corn Rifle</P><img src = "Media/candyCornRifle.png" class="armorPointer" onmouseover="imageEnlargeGun2(this)" onmouseout="imageResetGun2(this)" onclick="clickCandyCorn()" alt = "Candy Corn Rifle"
+                  height = "25px" width = "40px">  A Hardmode post-Plantera ranged weapon, that auto-fires Candy Corn as 
+                  ammunition. It is dropped rarely by the Pumpking during the Pumpkin Moon event. Candy Corn shots 
+                  penetrate enemies, and ricochet up to 4 times, dissipating on their fifth impact.
+                  </div> <!-- Candy Corn Rifle /div -->
+              </div> <!-- Guns - First Row /div -->
+            <div class = "row">
+              <div class = "col-4 chainGun"><P class = "armorTitles chainGunTitle">Chain Gun</P><img src = "Media/chainGun.png" class="armorPointer" onmouseover="imageEnlargeGun2(this)" onmouseout="imageResetGun2(this)" onclick="clickChainGun()" alt = "Chain Gun"
+                height = "25px" width = "40px"> A Hardmode, post-Plantera Gun, and is currently the fastest gun to-date. 
+                It has a 50% chance of not consuming Ammunition, but fires in random directions over a wide spread, similar
+                 to the Gatligator. It is dropped semi-rarely by Santa-NK1 during the Frost Moon event.
+                </div> <!-- Chain Gun /div -->
+              <div class = "col-4 miniShark"><P class = "armorTitles miniSharkTitle">Minishark</P><img src = "Media/miniShark.png" class="armorPointer" onmouseover="imageEnlargeGun3(this)" onmouseout="imageResetGun3(this)" onclick="clickMiniShark()" alt = "Minishark"
+                height = "15px" width = "50px"> A pre-Hardmode gun that can be bought from the Arms Dealer for 35 Gold. It is 
+                capable of autofiring and each shot has a 1/3 (33.33%) chance of not consuming any ammunition. It has the 
+                lowest use time of all pre-Hardmode ranged weapons.
+                </div> <!-- Minishark Gun /div -->
+              <div class = "col-4 megaShark"><P class = "armorTitles megaSharkTitle">Megashark</P><img src = "Media/megaShark.png" class="armorPointer" onmouseover="imageEnlargeGun3(this)" onmouseout="imageResetGun3(this)" onclick="clickMegaShark()" alt = "Megashark"
+                height = "15px" width = "50px"> A Hardmode gun that fires bullets. It is a stronger version of the 
+                Minishark and is one of the strongest pre-Plantera guns in the game. It fires at an insanely fast speed 
+                and has a 50% chance not to consume ammo.
+                </div> <!-- Megashark Gun /div -->
+            </div> <!-- Guns - Second Row /div-->
+            <div class = "row">
+              <div class = "col-4 gatligator"><P class = "armorTitles gatligatorTitle">Gatligator</P><img src = "Media/gatligator.png" class="armorPointer" onmouseover="imageEnlargeGun3(this)" onmouseout="imageResetGun3(this)" onclick="clickGatligator()" alt = "Gatligator"
+                height = "15px" width = "50px"> A Hardmode gun that fires as fast as the Megashark, and shares the 50% chance 
+                not to consume ammo. This weapon is very inaccurate, spreading bullets in random directions over a spread of 
+                about 30 degrees, making it very difficult to hit enemies from a far distance. It also fires at varying velocity.
+                The Chain Gun operates similarly, and can be considered an upgrade.
+                </div> <!-- Gatligator Gun /div -->
+              <div class = "col-4 paintBall"><P class = "armorTitles paintBallTitle">Paintball Gun</P><img src = "Media/paintballGun.png" class="armorPointer" onmouseover="imageEnlargeGun2(this)" onmouseout="imageResetGun2(this)" onclick="clickPaintballGun()" alt = "Paintball Gun"
+                height = "25px" width = "40px"> A ranged weapon which has a 1/10 (10%) chance of being dropped by the Painter. 
+                It fires a three-shot burst of slow-moving, arcing projectiles which consume no mana or ammunition. Though it 
+                is somewhat inaccurate at longer ranges, the respectable damage output, increased critical strike chance and 
+                lack of needing ammunition or mana makes the Paintball Gun a potent and reliable early-game weapon.
+                </div> <!-- Paintball Gun /div -->
+              <div class = "col-4 clockWork"><P class = "armorTitles clockWorkTitle">Clockwork Assault Rifle</P><img src = "Media/clockworkAssaultRifle.png" class="armorPointer" onmouseover="imageEnlargeGun3(this)" onmouseout="imageResetGun3(this)" onclick="clickClockWork()" alt = "Clockwork Assault Rifle"
+                height = "15px" width = "50px"> A Hardmode gun that fires in three-round bursts. It has a 1/8 (12.5%) / 1/4 (25%)
+                 chance to be dropped by the Wall of Flesh. Only the first shot out of the three will consume ammunition. The
+                  ⚒ Use / Attack button can be held for repeated fire.
+                  </div> <!-- Clockwork Assault Rifle /div -->
+            </div> <!-- Guns - Third Row /div-->
+            <div class = "row">
+              <div class = "col-4 coinGun"><P class = "armorTitles coinGunTitle">Coin Gun</P><img src = "Media/coinGun.png" class="armorPointer" onmouseover="imageEnlargeGun3(this)" onmouseout="imageResetGun3(this)" onclick="clickCoinGun()" alt = "Coin Gun"
+                height = "15px" width = "50px"> A Hardmode ranged weapon that uses coins as ammunition, which cannot be retrieved
+                 once fired. Its damage and velocity depend on the type of coin fired. It is dropped very rarely by Pirate Invasion
+                 enemies, excluding the Parrot. An Agile Coin Gun firing Platinum Coins deals one of the highest-single target DPS
+                 values in the game.
+                  </div> <!-- Coin Gun /div -->
+              <div class = "col-4 flameThrower"><P class = "armorTitles flameThrowerTitle"><img src = "Media/burningSphere.png"> Flamethrower <img src = "Media/burningSphere.png"></P><img src = "Media/flameThrower.png" class="armorPointer" onmouseover="imageEnlargeGun3(this)" onmouseout="imageResetGun3(this)" onclick="clickFlameThrower()" alt = "Flamethrower"
+                height = "15px" width = "50px"> A Hardmode ranged weapon that uses Gel for ammunition. 
+                It inflicts the <img src = "Media/onFire.png"> On Fire! debuff for 20 seconds.
+                  </div> <!-- Flamethrower /div -->
+              <div class = "col-4 venusMagnum"><P class = "armorTitles venusMagnumTitle">Venus Magnum</P><img src = "Media/venusMagnum.png" class="armorPointer" onmouseover="imageEnlargeMagnum(this)" onmouseout="imageResetMagnum(this)" onclick="clickVenusMagnum()" alt = "Venus Magnum"
+                height = "25px" width = "50px"> A Hardmode gun dropped by Plantera.  Musket Balls and Silver/Tungsten Bullets
+                fired from this weapon gain the properties of High Velocity Bullets, but retain their original damage. 
+                While it cannot be autofired, the Venus Magnum's use time is lower than most semiautomatic weapons, 
+                allowing it to be manually fired at a similar rate.
+                  </div> <!-- Venus Magnum /div -->
+            </div> <!-- Guns - Fourth Row /div-->
+            <div class = "row">
+              <div class = "col-4 sniperRifle"><P class = "armorTitles sniperRifleTitle">Sniper Rifle</P><img src = "Media/sniperRifle.png" class="armorPointer" onmouseover="imageEnlargeGun3(this)" onmouseout="imageResetGun3(this)" onclick="clickSniperRifle()" alt = "Sniper Rifle"
+                height = "15px" width = "50px"> A Hardmode, post-Plantera ranged weapon that fires a bullet with extremely 
+                high damage and velocity, though at a far slower rate of fire than most ranged weapons, and cannot auto-fire. 
+                It also has a "zoom" ability, allowing the screen to scroll temporarily in the direction of the cursor, 
+                essentially extending the viewing range in one direction.
+                  </div> <!-- Sniper Rifle /div -->
+              <div class = "col-4 onyxBlaster"><P class = "armorTitles onyxBlasterTitle">Onyx Blaster</P><img src = "Media/onyxBlaster.png" class="armorPointer" onmouseover="imageEnlargeGun3(this)" onmouseout="imageResetGun3(this)" onclick="clickOnyxBlaster()" alt = "Onyx Blaster"
+                height = "15px" width = "50px"> A Hardmode ranged weapon that fires a spread of 4 bullets while only
+                 consuming one unit of ammunition, and a single dark energy projectile that explodes upon impact with an 
+                 enemy or a block, or after traveling for 40 ticks. It is a direct upgrade to the Shotgun.
+                  </div> <!-- Onyx Blaster /div -->
+              <div class = "col-4 SDMG"><P class = "armorTitles SDMGTitle">S.D.M.G. (Space Dolphin Machine Gun)</P><img src = "Media/SDMG.png" class="armorPointer" onmouseover="imageEnlargeGun4(this)" onmouseout="imageResetGun4(this)" onclick="clickSDMG()" alt = "SDMG"
+                height = "20px" width = "50px"> a Hardmode, post-Moon Lord gun. It can be considered an endgame upgrade of 
+                the Megashark, with a slightly faster firing rate, a 50% chance not to consume ammunition, and a 
+                noticeably higher damage output. Its abilities are also similar to those of the Chain Gun, but it 
+                is more precise and deals significantly more damage, though with a slightly slower rate of fire. It has 
+                a 1/9 (11.11%) chance to be dropped by the Moon Lord.
+                  </div> <!-- SDMG /div -->
+            </div> <!-- Guns - Fifth Row /div -->
+            </div> <!-- Guns panel-body /div -->
+          </div> <!-- Guns /div -->
+          <div id ="bows" style = "display:none" class ="grp">
+            <div class="panel-body">
+              <p class = "armorTitles">Hover over the bows to get a closer look.</p> 
+              <h6><p class = "clickableSets">Click on the bows to view the gifs attached to them.</p></h6>
+              <div class = "row"> <!-- First Bows Row -->
+              <div class = "col-4 Wooden"><P class = "armorTitles woodenBowTitle">Wooden Bow</P><img src = "Media/Bows/woodenBow.png" class = "armorPointer" onmouseover="imageEnlargeBow(this)"
+                 onmouseout="imageResetBow(this)" onclick = "clickWoodBow()" alt = "Wooden Bow" height = "40px" width = "15px">
+              The weakest bow in the game, dealing 4 base damage plus the damage of the arrow being fired. It is very cheap to make,
+               and is therefore usually the first ranged weapon a player will acquire.
+            </div> <!-- col woodenBow /div -->
+            <div class = "col-4 borealWooden"><P class = "armorTitles borealWoodTitle">Boreal Wood Bow</P><img src = "Media/Bows/borealWoodBow.png" class = "armorPointer" onmouseover="imageEnlargeBow(this)"
+              onmouseout="imageResetBow(this)" onclick = "clickBorealBow()" alt = "Boreal Wood Bow" height = "40px" width = "15px">
+              A type of bow crafted from Boreal Wood. It is similar to the original Wooden Bow, but it has improved damage and
+               a higher velocity. Because Snow biomes are usually not too far from the initial spawn point, a Boreal Wood Bow can 
+               be a superior alternative to its standard counterpart.
+         </div> <!-- col borealWoodBow /div -->
+         <div class = "col-4 palmWood"><P class = "armorTitles palmWoodTitle">Palm Wood Bow</P><img src = "Media/Bows/palmWoodBow.png" class = "armorPointer" onmouseover="imageEnlargeBow(this)"
+          onmouseout="imageResetBow(this)" onclick = "clickPalmBow()" alt = "Palm Wood Bow" height = "40px" width = "15px">
+          Similar to the original Wooden Bow, but it has improved damage and a higher velocity. Its best modifier is Demonic, as it
+           does does not have any knockback and thus cannot get modifiers that affect it.
+          </div> <!-- col palmWoodBow /div -->
+            </div> <!-- First Bows Row /div-->
+            <div class = "row"> <!-- Second Bow Row -->
+            <div class = "col-4 palmWood"><P class = "armorTitles richMahoTitle">Rich Mahogany Bow</P><img src = "Media/Bows/richMahoganyBow.png" class = "armorPointer" onmouseover="imageEnlargeBow(this)"
+              onmouseout="imageResetBow(this)" onclick = "clickRichMaho()" alt = "Rich Mahogany Bow" height = "40px" width = "15px">
+              A bow that is stronger than a Wooden Bow, but weaker than an Ebonwood Bow/Shadewood Bow. 
+              </div> <!-- Rich Mahogany Bow /div-->
+            <div class = "col-4 copperBow"><P class = "armorTitles copperBowTitle">Copper Bow</P><img src = "Media/Bows/copperBow.png" class = "armorPointer" onmouseover="imageEnlargeBow(this)"
+              onmouseout="imageResetBow(this)" onclick = "clickCopperBow()" alt = "Copper Bow" height = "40px" width = "15px">
+              A Pre-Hardmode low tier bow made solely out of Copper Bars. 
+              Its basic function is to fire Arrows from a distance to deal damage to enemies.
+              </div> <!-- Copper Bow /div-->
+            <div class = "col-4 tinBow"><P class = "armorTitles tinBowTitle">Tin Bow</P><img src = "Media/Bows/tinBow.png" class = "armorPointer" onmouseover="imageEnlargeBow(this)"
+              onmouseout="imageResetBow(this)" onclick = "clickTinBow()" alt = "Tin Bow" height = "40px" width = "15px">
+              A low tier bow crafted solely using Tin Bars. Its sole purpose is to fire arrows from a distance to hit enemies. 
+              It is the second easiest bow to get, the first being the Palm Wood Bow, or any other type of wood.
+              </div> <!-- Tin Bow /div-->
+            </div> <!-- Second Bows Row /div-->
+            <div class = "row"> <!-- Third Bow Row -->
+            <div class = "col-4 ebonWood"><P class = "armorTitles ebonWoodTitle">Ebonwood Bow</P><img src = "Media/Bows/ebonWoodBow.png" class = "armorPointer" onmouseover="imageEnlargeBow(this)"
+              onmouseout="imageResetBow(this)" onclick = "clickEbonWood()" alt = "Ebonwood Bow" height = "40px" width = "15px">
+              The third-best wooden-tier bow crafted using Ebonwood. It is often one of the first ranged weapons a player
+               can acquire in-game. It is the Corruption equivalent of the Shadewood Bow.
+              </div> <!-- Ebonwood Bow /div-->
+            <div class = "col-4 shadeWood"><P class = "armorTitles shadeWoodTitle">Shadewood Bow</P><img src = "Media/Bows/shadeWoodBow.png" class = "armorPointer" onmouseover="imageEnlargeBow(this)"
+               onmouseout="imageResetBow(this)" onclick = "clickShadeWood()" alt = "Shadewood Bow" height = "40px" width = "15px">
+               The bow crafted using Shadewood. It is the Crimson equivalent of the Ebonwood Bow.
+               Its best modifier is Demonic, as it does does not have any knockback and thus cannot get modifiers that affect it.
+              </div> <!-- Shadewood Bow /div-->
+            <div class = "col-4 ironBow"><P class = "armorTitles ironBowTitle">Iron Bow</P><img src = "Media/Bows/ironBow.png" class = "armorPointer" onmouseover="imageEnlargeBow(this)"
+              onmouseout="imageResetBow(this)" onclick = "clickIronBow()" alt = "Iron Bow" height = "40px" width = "15px">
+              a low tier bow crafted using Iron Bars. It is slightly stronger than the Copper Bow and Tin Bow. 
+              Its sole purpose is to fire arrows from a distance to deal damage to enemies.
+              </div> <!-- Iron Bow /div-->
+            </div> <!-- Third Bows Row /div-->
+          <div class = "row"> <!-- Fourth Bow Row -->
+            <div class = "col-4 leadBow"><P class = "armorTitles leadBowTitle">Lead Bow</P><img src = "Media/Bows/leadBow.png" class = "armorPointer" onmouseover="imageEnlargeBow(this)"
+              onmouseout="imageResetBow(this)" onclick = "clickLeadBow()" alt = "Lead Bow" height = "40px" width = "15px">
+              A low tier bow crafted using Lead Bars. It is stronger than the lowest tier of ore bows, the Copper Bow and Tin Bow,
+               and is even slightly stronger than its counterpart, the Iron Bow. Like the other bows, its sole purpose is to fire arrows
+                from a distance to damage enemies.
+              </div> <!-- Lead Bow /div-->
+            <div class = "col-4 silverBow"><P class = "armorTitles silverBowTitle">Silver Bow</P><img src = "Media/Bows/silverBow.png" class = "armorPointer" onmouseover="imageEnlargeBow(this)"
+              onmouseout="imageResetBow(this)" onclick = "clickSilverBow()" alt = "Silver Bow" height = "40px" width = "15px">
+              A strong, mid-tier bow crafted solely using Silver Bars. Its sole purpose is to fire arrows from a distance
+               to deal damage to enemies. Its counterpart is the Tungsten bow.
+              </div> <!-- Silver Bow /div-->
+            <div class = "col-4 tungstenBow"><P class = "armorTitles tungstenBowTitle">Tungsten Bow</P><img src = "Media/Bows/tungstenBow.png" class = "armorPointer" onmouseover="imageEnlargeBow(this)"
+              onmouseout="imageResetBow(this)" onclick = "clickTungstenBow()" alt = "Tungsten Bow" height = "40px" width = "15px">
+              A strong, mid-tier bow crafted solely using Tungsten Bars. It is stronger than its ore counterpart, the Silver Bow, 
+              and the ones that precede it in power. Like other bows, it uses arrows as ammo. It does not convert used arrows into
+               special arrows.
+              </div> <!-- Tungsten Bow /div-->
+          </div> <!-- Fourth Bows Row /div-->
+          <div class = "row"> <!-- Fifth Bow Row -->
+            <div class = "col-4 goldBow"><P class = "armorTitles goldBowTitle">Gold Bow</P><img src = "Media/Bows/goldBow.png" class = "armorPointer" onmouseover="imageEnlargeBow(this)"
+              onmouseout="imageResetBow(this)" onclick = "clickGoldBow()" alt = "Gold Bow" height = "40px" width = "15px">
+              A strong type of bow crafted solely using Gold Bars, and is one of the strongest types of ore bows before one is 
+              able to obtain Demonite or Crimtane. It is the counterpart to the Platinum Bow, yet is beaten by it in power and speed. 
+              Its sole purpose is to fire arrows from a distance at enemies and deal damage to them.
+              </div> <!-- Gold Bow /div-->
+            <div class = "col-4 platBow"><P class = "armorTitles platBowTitle">Platinum Bow</P><img src = "Media/Bows/platinumBow.png" class = "armorPointer" onmouseover="imageEnlargeBow(this)"
+              onmouseout="imageResetBow(this)" onclick = "clickPlatBow()" alt = "Platinum Bow" height = "40px" width = "15px">
+              A bow crafted solely using Platinum Bars, and is the strongest type of ore bow one is able to obtain before Demonite or
+               Crimtane. The Gold Bow is its slightly weaker counterpart. Its sole purpose is to fire arrows from a distance to hit 
+               enemies and deal damage to them.
+              </div> <!-- Platinum Bow /div-->
+            <div class = "col-4 demonBow"><P class = "armorTitles demonBowTitle">Demon Bow</P><img src = "Media/Bows/demonBow.png" class = "armorPointer" onmouseover="imageEnlargeBow(this)"
+               onmouseout="imageResetBow(this)" onclick = "clickDemonBow()" alt = "Demon Bow" height = "40px" width = "15px">
+               A bow crafted solely using Demonite Bars. It is an upgrade over the Gold Bow and the Platinum Bow, being stronger 
+               and faster. The Demon Bow, along with its counterpart, the Tendon Bow, is the last type of ore bow the player will 
+               be able to craft until they reach The Underworld, as they could craft the Molten Fury.
+              </div> <!-- Demon Bow /div-->
+          </div> <!-- Fifth Bows Row /div-->
+          <div class = "row"> <!-- Sixth Bow Row -->
+            <div class = "col-4 tendonBow"><P class = "armorTitles tendonBowTitle">Tendon Bow</P><img src = "Media/Bows/tendonBow.png" class = "armorPointer" onmouseover="imageEnlargeBow(this)"
+              onmouseout="imageResetBow(this)" onclick = "clickTendonBow()" alt = "Tendon Bow" height = "40px" width = "15px">
+              A bow crafted solely using Crimtane Bars. It is the Crimson counterpart to the Corruption's Demon Bow, with a slightly 
+              higher base damage and slower speed. Along with its counterpart, it is the last type of ore bow the player can craft 
+              until they reach The Underworld, where they could craft the Molten Fury.
+             </div> <!-- Tendon Bow /div-->
+            <div class = "col-4 bloodRainBow"><P class = "armorTitles bloodRainBowTitle">Blood Rain Bow</P><img src = "Media/Bows/bloodRainBow.png" class = "armorPointer" onmouseover="imageEnlargeBow(this)"
+              onmouseout="imageResetBow(this)" onclick = "clickbloodRainBow()" alt = "Blood Rain Bow" height = "40px" width = "15px">
+              A pre-Hardmode bow which rains 1–3 streams of blood from the sky instead of arrows. Each shot consumes one arrow from 
+              the player's inventory. The streams fall in a widespread area where the cursor is pointed, but are blocked by solid blocks.
+               It has a 1/8 (12.5%) chance to drop from a Wandering Eye Fish or Zombie Merman.
+             </div> <!-- Blood Rain Bow /div-->
+             <div class = "col-4 moltenFury"><P class = "armorTitles moltenFuryTitle">Molten Fury</P><img src = "Media/Bows/moltenFury.png" class = "armorPointer" onmouseover="imageEnlargeBow(this)"
+              onmouseout="imageResetBow(this)" onclick = "clickMoltenFury()" alt = "Blood Rain Bow" height = "40px" width = "15px">
+              A pre-Hardmode bow that lights ordinary Wooden Arrows ablaze, effectively transforming them into Flaming Arrows, 
+              and causing them to emit light and inflict the <img src = "Media/onFire.png"> On Fire! debuff to enemies it hits. Other arrow types fired from Molten Fury
+               will retain their original properties. Wooden Arrows do not inherit the increased damage of actual Flaming Arrows.
+             </div> <!-- Molten Fury /div-->
+          </div> <!-- Sixth Bows Row /div-->
+          <div class = "row"> <!-- Seventh Bow Row -->
+            <div class = "col-4 Phantasm"><P class = "armorTitles phantasmTitle">Phantasm</P><img src = "Media/Bows/Phantasm.png" class = "armorPointer" onmouseover="imageEnlargeBow(this)"
+              onmouseout="imageResetBow(this)" onclick = "clickPhantasm()" alt = "Phantasm" height = "40px" width = "15px">
+              A Hardmode, post-Lunatic Cultist craftable bow that auto-fires four arrows at once, while only consuming a single arrow
+               from the player's inventory. Arrows are loosely grouped and can fire with varied velocities and ranges
+                (similar to the Chlorophyte Shotbow). The bow has a 66% chance of not consuming ammunition.
+             </div> <!-- Phantasm /div-->
+            <div class = "col-4 Phantasm"><P class = "armorTitles eventideTitle">Eventide</P><img src = "Media/Bows/Eventide.png" class = "armorPointer" onmouseover="imageEnlargeBow(this)"
+              onmouseout="imageResetBow(this)" onclick = "clickEventide()" alt = "Eventide" height = "40px" width = "15px">
+              A Hardmode bow that auto-fires five streams of colorful rainbows if wooden arrows are used as ammunition. 
+              One of the five shots fired by the bow does double the original damage. Each stream can pierce up to four enemies and 
+              can be spread out by moving the cursor while firing. The Eventide has a 1/4 (25%) chance of being dropped by the 
+              Empress of Light.
+             </div> <!-- Eventide /div-->
+            <div class = "col-4 aerialBane"><P class = "armorTitles aerialBaneTitle">Aerial Bane</P><img src = "Media/Bows/aerialBane.png" class = "armorPointer" onmouseover="imageEnlargeBow(this)"
+              onmouseout="imageResetBow(this)" onclick = "clickAerialBane()" alt = "Aerial Bane" height = "40px" width = "15px">
+              A Hardmode, post-Golem bow which is dropped by Betsy during the Old One's Army event. It converts any type of arrow 
+              into six special arrows every time the bow is fired, and deals 50% bonus damage to airborne enemies. It is dropped by
+              Betsy.
+             </div> <!-- Eventide /div-->
+          </div> <!-- Seventh Bow Row /div-->
+            </div> <!-- Bows panel-body /div-->
+            </div> <!-- Bows /div-->
+            <div id ="repeaters" style = "display:none" class ="grp">
+              <div class="panel-body">
+                <p class = "armorTitles">Hover over the repeaters to get a closer look.</p> 
+                <h6><p class = "clickableSets">Click on the repeaters to view the gifs attached to them.</p></h6>
+                <div class = "row"> <!-- First Repeaters Row -->
+                  <div class = "col-4 cobaltRepeater"><P class = "armorTitles cobaltRepeaterTitle">Cobalt Repeater</P><img src = "Media/Repeaters/cobaltRepeater.png" class = "armorPointer" onmouseover="imageEnlargeRepeater(this)"
+                     onmouseout="imageResetRepeater(this)" onclick = "clickCobaltRepeater()" alt = "Cobalt Repeater" height = "25px" width = "50px">
+                     A Hardmode repeater crafted solely using Cobalt Bars. It is one of the first repeaters that can be obtained 
+                     once entering Hardmode, the other being the Palladium Repeater. It is also the weakest of all repeaters, which 
+                     is not to say that it cannot be effective.
+                </div> <!-- col Cobalt Repeater /div -->
+                <div class = "col-4 pallaRepeater"><P class = "armorTitles pallaRepeaterTitle">Palladium Repeater</P><img src = "Media/Repeaters/palladiumRepeater.png" class = "armorPointer" onmouseover="imageEnlargeRepeater(this)"
+                  onmouseout="imageResetRepeater(this)" onclick = "clickPallaRepeater()" alt = "Palladium Repeater" height = "25px" width = "50px">
+                  A Hardmode repeater crafted solely using Palladium Bars. It is one of the first repeaters you can obtain once
+                   entering Hardmode, the other being the Cobalt Repeater. The Palladium Repeater has 2 higher base damage, slightly 
+                   faster fire rate, and higher projectile velocity, all compared to its counterpart, the Cobalt Repeater.
+             </div> <!-- col Palladium Repeater /div -->
+             <div class = "col-4 mythRepeater"><P class = "armorTitles mythrilRepeaterTitle">Mythril Repeater</P><img src = "Media/Repeaters/mythrilRepeater.png" class = "armorPointer" onmouseover="imageEnlargeRepeater(this)"
+              onmouseout="imageResetRepeater(this)" onclick = "clickMythrilRepeater()" alt = "Mythril Repeater" height = "25px" width = "50px">
+              A Hardmode repeater crafted solely using Mythril Bars. Its stronger equivalent is the Orichalcum Repeater. It deals 36
+              damage, slightly less powerful than its counterpart. It requires 10 Mythril Bars to craft. Its best modifier is Unreal.
+            </div> <!-- col Mythril Repeater /div -->
+                </div> <!-- First Repeaters Row /div-->
+              <div class = "row"> <!-- Second Repeaters Row -->
+                <div class = "col-4 oriRepeater"><P class = "armorTitles orichalcumRepeaterTitle">Orichalcum Repeater</P><img src = "Media/Repeaters/orichalcumRepeater.png" class = "armorPointer" onmouseover="imageEnlargeRepeater(this)"
+                  onmouseout="imageResetRepeater(this)" onclick = "clickOriRepeater()" alt = "Orichalcum Repeater" height = "25px" width = "50px">
+                  A Hardmode repeater crafted solely using Orichalcum Bars. It can be auto-fired and is thus easy to use. 
+                  Its weaker equivalent is the Mythril Repeater. It requires 12 Orichalcum Bars to craft. Its best modifier is Unreal.
+                </div> <!-- col Orichalcum Repeater /div -->
+              <div class = "col-4 adaRepeater"><P class = "armorTitles adamantiteRepeaterTitle">Adamantite Repeater</P><img src = "Media/Repeaters/adamantiteRepeater.png" class = "armorPointer" onmouseover="imageEnlargeRepeater(this)"
+                onmouseout="imageResetRepeater(this)" onclick = "clickAdaRepeater()" alt = "Adamantite Repeater" height = "25px" width = "50px">
+                A Hardmode repeater crafted solely using Orichalcum Bars. It can be auto-fired and is thus easy to use. 
+                Its weaker equivalent is the Mythril Repeater. It requires 12 Orichalcum Bars to craft. Its best modifier is Unreal.
+                </div> <!-- col Adamantite Repeater /div -->
+                <div class = "col-4 titaRepeater"><P class = "armorTitles titaniumRepeaterTitle">Titanium Repeater</P><img src = "Media/Repeaters/titaniumRepeater.png" class = "armorPointer" onmouseover="imageEnlargeRepeater(this)"
+                  onmouseout="imageResetRepeater(this)" onclick = "clickTitaRepeater()" alt = "Titanium Repeater" height = "25px" width = "50px">
+                  A Hardmode repeater crafted solely using Titanium Bars. It beats its counterpart, the Adamantite Repeater, 
+                  in power only by a mere 1 damage. It is currently the best repeater obtainable without defeating a Mechanical Boss, 
+                  after which the Hallowed Repeater takes the spotlight.
+                  </div> <!-- col Titanium Repeater /div -->
+              </div> <!-- Second Repeaters Row /div-->
+              <div class = "row"> <!-- Third Repeaters Row -->
+                <div class = "col-4 halloRepeater"><P class = "armorTitles hallowedRepeaterTitle">Hallowed Repeater</P><img src = "Media/Repeaters/hallowedRepeater.png" class = "armorPointer" onmouseover="imageEnlargeRepeater(this)"
+                  onmouseout="imageResetRepeater(this)" onclick = "clickHallowedRepeater()" alt = "Hallowed Repeater" height = "25px" width = "50px">
+                  A Hardmode repeater crafted using Hallowed Bars. It shares the same white and gold color scheme as other Hallowed gear 
+                  and weapons. The Hallowed Repeater has the highest speed and per-hit damage of any repeater that fires arrows. Its best
+                   modifier is Unreal.
+                  </div> <!-- col Hallowed Repeater /div -->
+                 <div class = "col-4 chloroShotbow"><P class = "armorTitles chloroShotBowTitle">Chlorophyte Shotbow</P><img src = "Media/Repeaters/chlorophyteShotbow.png" class = "armorPointer" onmouseover="imageEnlargeRepeater(this)"
+                  onmouseout="imageResetRepeater(this)" onclick = "clickChlorophyteShotbow()" alt = "Chlorophyte Shotbow" height = "25px" width = "50px">
+                  A Hardmode repeater crafted using Chlorophyte Bars. It shoots 2-4 arrows per shot but only consumes one arrow, 
+                  as with all other multi-shot bows. Arrows fired with the Chlorophyte Shotbow cannot be recovered regardless of the type
+                   of arrow used.
+                  </div> <!-- col Chlorophyte Shotbow /div -->
+                <div class = "col-4 stakeLauncher"><P class = "armorTitles stakeLauncherTitle">Stake Launcher</P><img src = "Media/Repeaters/stakeLauncher.png" class = "armorPointer" onmouseover="imageEnlargeRepeater(this)"
+                  onmouseout="imageResetRepeater(this)" onclick = "clickStakeLauncher()" alt = "Stake Launcher" height = "25px" width = "50px">
+                  A Hardmode, post-Plantera repeater-like weapon which auto-fires Stakes as ammunition. Stakes are not affected by 
+                  gravity, pierce through 9 enemies, hitting a total of 10 enemies, and travel faster than most arrows. It applies
+                   a 10% damage penalty to the next hit for each enemy a projectile pierces and has a base 14% critical strike chance
+                    as opposed to the usual 4%. Additionally, it receives a substantial damage boost of 1000% against Vampires.
+                  </div> <!-- col Stake Launcher /div -->
+              </div> <!-- Third Repeaters Row /div-->
+            </div> <!-- Repeaters panel-body /div-->
+          </div> <!-- Repeaters /div-->
+          <div id ="launchers" style = "display:none" class ="grp">
+            <div class="panel-body">
+              <p class = "armorTitles">Hover over the launchers to get a closer look.</p> 
+              <h6><p class = "clickableSets">Click on the launchers to view the gifs attached to them.</p></h6>
+              <div class = "row"> <!-- First Launchers Row -->
+                <div class = "col-4 grenadeLauncher"><P class = "armorTitles grenadeLauncherTitle">Grenade Launcher</P><img src = "Media/Launchers/grenadeLauncher.png" class = "armorPointer" onmouseover="imageEnlargeRepeater(this)"
+                  onmouseout="imageResetRepeater(this)" onclick = "clickGrenadeLauncher()" alt = "Grenade Launcher" height = "25px" width = "50px">
+                  A Hardmode, post-Plantera launcher that consumes rockets and launches a grenade with a timed fuse. 
+                  The grenade explodes when the fuse expires, or if it comes into contact with an enemy. The Grenade Launcher has a
+                   chance to be dropped from Plantera, and on non-Expert or Master Mode worlds, it is guaranteed to drop the first time
+                    Plantera is defeated. In addition, 50–149 <img src="Media/Launchers/Rocket_I.png"> Rocket I's will be dropped alongside the Grenade Launcher.
+                  </div> <!-- col Grenade Launcher /div -->
+                <div class = "col-4 grenadeLauncher"><P class = "armorTitles proxiMineLauncherTitle">Proximity Mine Launcher</P><img src = "Media/Launchers/proximityMineLauncher.png" class = "armorPointer" onmouseover="imageEnlargeRepeater(this)"
+                   onmouseout="imageResetRepeater(this)" onclick = "clickProxiMineLauncher()" alt = "Proximity Mine Launcher" height = "25px" width = "50px">
+                   A Hardmode, post-Plantera launcher that fires mines which stick to blocks, remaining dormant and semi-transparent 
+                   until a player or enemy approaches, or until a minute passes, at which point they explode. The Proximity Mine Launcher
+                    is purchased from the Cyborg for 35 Gold. It uses rockets as ammunition.
+                  </div> <!-- col Proximity Mine Launcher /div -->
+                <div class = "col-4 rocketLauncher"><P class = "armorTitles rocketLauncherTitle">Rocket Launcher</P><img src = "Media/Launchers/rocketLauncher.png" class = "armorPointer" onmouseover="imageEnlargeRepeater(this)"
+                   onmouseout="imageResetRepeater(this)" onclick = "clickRocketLauncher()" alt = "Rocket Launcher" height = "25px" width = "50px">
+                   A Hardmode, post-Plantera launcher that fires explosive rockets. It has a 1/18 (5.56%) / 35/324 (10.8%) chance
+                    of being dropped by Skeleton Commandos, which only spawn in the Dungeon after Plantera is defeated. Its rocket
+                     ammunition can be purchased from the Cyborg, which similarly becomes available after defeating Plantera.
+                  </div> <!-- col Rocket Launcher /div -->
+              </div> <!-- First Launchers Row /div-->
+              <div class = "row"> <!-- Second Launchers Row-->
+              <div class = "col-4 nailGun"><P class = "armorTitles nailGunTitle">Nail Gun</P><img src = "Media/Launchers/nailGun.png" class = "armorPointer" onmouseover="imageEnlargeNail(this)"
+                onmouseout="imageResetNail(this)" onclick = "clickNailGun()" alt = "Nail Gun" height = "20px" width = "45px">
+                A Hardmode, post-Plantera ranged weapon which has a 4% / 7.84% (1/25 / 49/625) chance to drop from Nailhead during 
+                Solar Eclipses. It uses Nails as ammunition, which are sold by both the Merchant and the Arms Dealer when the player 
+                has the Nail Gun in their inventory for 1 Silver each.
+                </div> <!-- col Jack 'O Lantern Launcher /div -->
+              <div class = "col-4 jackOLantern"><P class = "armorTitles jackOLanternLauncherTitle">Jack 'O Lantern Launcher</P><img src = "Media/Launchers/jackOLanternLauncher.png" class = "armorPointer" onmouseover="imageEnlargeJack(this)"
+                onmouseout="imageResetJack(this)" onclick = "clickJackOLanternLauncher()" alt = "Jack 'O Lantern Launcher" height = "30px" width = "40px">
+                A Hardmode, post-Plantera launcher that fires Explosive Jack 'O Lanterns and drops from Pumpking during the 
+                Pumpkin Moon event. The player can buy Explosive Jack 'O Lanterns from the Arms Dealer for 15 copper each if they have 
+                the launcher in their inventory.
+                </div> <!-- col Jack 'O Lantern Launcher /div -->
+              <div class = "col-4 snowmanCannon"><P class = "armorTitles snowmanCannonTitle">Snowman Cannon</P><img src = "Media/Launchers/snowmanCannon.png" class = "armorPointer" onmouseover="imageEnlargeRepeater(this)"
+                onmouseout="imageResetRepeater(this)" onclick = "clickSnowmanCannon()" alt = "Snowman Cannon" height = "25px" width = "50px">
+                A Hardmode, post-Plantera launcher. It has a low chance (4.4% – 7.52%) to be dropped by the Ice Queen during the
+                 Frost Moon event. It can be considered an upgraded, homing version of the Rocket Launcher, firing rockets that
+                  will track the nearest enemy and detonate on contact.
+                </div> <!-- col Snowman Cannon /div -->
+              </div> <!-- Second Launchers Row /div-->
+              <div class = "row">
+              <div class = "col-4 Stynger"><P class = "armorTitles StyngerTitle">Stynger</P><img src = "Media/Launchers/Stynger.png" class = "armorPointer" onmouseover="imageEnlargeJack(this)"
+                onmouseout="imageResetJack(this)" onclick = "clickStynger()" alt = "Snowman Cannon" height = "30px" width = "40px">
+                A Hardmode ranged weapon which has a 1/7 (14.29%) chance to be dropped by Golem. It auto-fires Stynger Bolts,
+                 which are initially dropped by Golem along with the weapon. The Stynger Bolts explode on impact, dealing damage
+                  to anything in the explosion radius. Arching shrapnel is thrown from the explosion, each causing additional smaller
+                   explosions that inflict the same base damage.
+                </div> <!-- col Stynger /div -->
+              <div class = "col-4 electrosphereLauncher"><P class = "armorTitles electroTitle">Electrosphere Launcher</P><img src = "Media/Launchers/electrosphereLauncher.png" class = "armorPointer" onmouseover="imageEnlargeElectro(this)"
+                onmouseout="imageResetElectro(this)" onclick = "clickElectro()" alt = "Electrosphere Launcher" height = "25px" width = "60px">
+                A Hardmode, post-Golem launcher that fires rockets to the position of the cursor, then forms an energy-emanating 
+                ball of constant damage for approximately 8 seconds. An infinite number of electrospheres can be summoned, but they
+                 cannot overlap. It has a chance to be dropped by the Martian Saucer during the Martian Madness event.
+                </div> <!-- col Electrosphere Launcher /div -->
+              <div class = "col-4 Celebration"><P class = "armorTitles celebrationTitle">Celebration</P><img src = "Media/Launchers/Celebration.png" class = "armorPointer" onmouseover="imageEnlargeJack(this)"
+                onmouseout="imageResetJack(this)" onclick = "clickCelebration()" alt = "Celebration" height = "30px" width = "40px">
+                A Hardmode post-Golem launcher that fires two rockets at once (but only consumes one unit of rocket) that travel 
+                a short distance before exploding. When the rockets detonate, they display patterns and colors similar to fireworks.
+                It is sold by the Party Girl after defeating Golem, and its successor is the Celebration Mk2.
+                </div> <!-- col Celebration /div -->
+              </div> <!-- Third Launchers Row /div-->
+              <div class = "row">
+                <div class = "col-4">
+                  <!-- Empty Space-->
+                </div> <!-- Empty Space /div-->
+              <div class = "col-4 CelebrationMk2"><P class = "armorTitles celebrationMk2Title">Celebration Mk2</P><img src = "Media/Launchers/celebrationMk2.png" class = "armorPointer" onmouseover="imageEnlargeCelebrationMk2(this)"
+                onmouseout="imageResetCelebrationMk2(this)" onclick = "clickCelebrationMk2()" alt = "Celebration" height = "25px" width = "70px">
+                A Hardmode post-Golem launcher that fires two rockets at once (but only consumes one unit of rocket) that travel 
+                a short distance before exploding. When the rockets detonate, they display patterns and colors similar to fireworks.
+                It is sold by the Party Girl after defeating Golem, and its successor is the Celebration Mk2.
+                  </div> <!-- col Celebration /div -->
+                  <div class = "col-4">
+                  <!-- Empty Space-->
+                  </div> <!-- Empty Space /div-->
+              </div> <!-- Fourth Launchers Row /div-->
+              </div> <!-- Launchers panel-body /div-->
+            </div> <!-- Launchers /div-->
+        </div> <!--Container /div-->
+      </div> <!--panel panel-default /div-->
+    </div> <!--panelGroup /div-->
+  </div> <!--Main Container /div-->
+
+  <br>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <hr>
+    <p class="text-center footer-copyright">	&#169; Re-Logic. All rights reserved.</p>
+  </footer>
+
+  </body>
+  <script src="Guides.js" type="text/javascript"></script>
+  <script src="Guides-Bows.js" type="text/javascript"></script>
+  <script src="Guides-Repeaters.js" type="text/javascript"></script>
+  <script src="Guides-Launchers.js" type="text/javascript"></script>
+  </html>
